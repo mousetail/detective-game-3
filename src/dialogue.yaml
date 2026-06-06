@@ -1,0 +1,118 @@
+characters:
+  - id: CEO
+    name: TBD
+    gender: TBD
+    image: portrait_a
+    team: Leadership
+    character_description: Highly charismatic. Does not tolerate negative speech around them.
+    relationships:
+      - with: Fangirl
+        description: Gets classified HR info used to punish those that doubt the mission.
+      - with: Profiteur
+        description: Profiteur wawnts to build more solid prototype while C.E.O wants to focus on portable ones.
+      - with: Organizer
+        description: Old friends from college, but haven't interacted in a long time. Still trust each other deeply.
+  - id: Intern
+    name: TBD
+    gender: TBD
+    image: portrait_b
+    team: Engineers
+    character_description: Technology goes above his head. Needs to innovate something to finish their master thesis. Faces pressure from parents to finish fast.
+    relationships:
+      - with: Profiteur
+        description: Frustrated profiteur won't give him access to things required to do his experiments, and is still keeping secrets about how the tech works precisely.
+      - with: Fraud
+        description: Has a great deal of respect for Fraud. 
+  - id: Profiteur
+    name: TBD
+    gender: TBD
+    image: portrait_c
+    team: Engineers
+    character_description: Lead engineer. Firmly believes that the technology can work if enough time and money is invested. Lucarive side business speaking at universities and other conferences about the science of the tech.
+    relationships:
+      - with: Intern
+        description: The interns direct supervisor. Tries to convince intern to focus their experiments on something not that directly related to the actual technology.
+      - with: Fraud
+        description: Knows Fraud is a Fraud and uses that fact to manipulate him into dirty work of faking demos.
+      - with: Organizer
+        description: Faces a lot of pressure from organizer for a successful demo
+      - with: CEO
+        description: Disagrees with C.E.O. on the decision to pivot to smaller portable versions of the tech despite lack of technical viability.
+  - id: Fraud
+    name: TBD
+    gender: TBD
+    image: portrait_d
+    team: Engineers
+    character_description: Faked their engineering degree. Management uses this as blackmail to keep them doing dirty work to fake the demos.
+    relationships:
+      - with: Profiteur
+        description: Profiteur is directly blackmailing Fraud
+  # - id: Accounting
+  #   name: Accounting
+  #   gender: TBD
+  #   image: portrait_e
+  #   character_description: TBD
+  #   team: Admin
+  - id: Fangirl
+    name: Fangirl
+    gender: TBD
+    image: portrait_f
+    team: Admin
+    character_description: A big fan of the C.E.O. Truly believes this tech is going to change the world for the better. Snitches out people who seem to doubt the vision.
+    relationships:
+      - with: CEO
+        description: Worships the CEO. Happy to do anything CEO asks or of someone tells them the CEO asked for something.
+      - with: Organizer
+        description: Since the CEO isn't often available, relies on Organizer as a proxy to find more about CEO.
+      - with: Journalist
+        description: Um
+  - id: Organizer
+    name: Organizer
+    gender: TBD
+    image: portrait_g
+    team: Marketing
+    character_description: Responsible for organizing the event. A fairly big name in the industry. Invested a lot of their personal money. Has a lot of personal stake in a successful demo.
+    relationships:
+      - with: CEO
+        description: Friends from college. Not met until they started working together again. Lost a lot of respect for each other there.
+      - with: Profiteur
+        description: Angry at profiteur for repeatedly failing creating convincing demos. Thinks the entire engineering team is incompetent.
+      - with: Journalist
+        description: Direct supervisor of journalist, but doesn't really have time to keep an eye on them.
+  - id: Journalist
+    name: Journalist
+    gender: TBD
+    image: portrait_h
+    team: Marketing
+    character_description: Retroactively decided they are an undercover journalist, despite having no official connection to any media. Will do a lot of snooping and likely get caught and cause problems.
+    relationships:
+      - with: Organizer
+        description: Under supervisor
+      - with: Fraud
+        description: Found out about Fraud's fake engineering degree.
+  - id: Janator
+    name: Janator
+    gender: TBD
+    image: portrait_i
+    team: Janator
+    character_description: Just works here. Might have overheard useful information.
+locations:
+  - id: parking-lot
+    name: Parking Lot
+    description: TBD
+    background-image: TBD
+    coords:
+      x: 0.45
+      y: 0.95
+conversations:
+  - id: organizer-admin-conf
+    location: parking-lot
+    time: 09:00
+    characters:
+      - organizer
+      - Profiteur
+    dialogue:
+      - from: organizer
+        text: Please tell me the prototype will be ready for the demo at 7:00. Our careers depend on this.
+      - from: profiteur
+        text: Hi
